@@ -14,8 +14,11 @@ import java.util.concurrent.TimeUnit;
 
 public class Tests {
 
+
+
     @Test
     public void logIn(){
+        System.setProperty("webdriver.chrome.driver", "C:/chrome_driver/chromedriver.exe");
         loginPage.homePage().goTo();
         Assert.assertTrue(loginPage.homePage().isAt());
         loginPage.homePage().logIn();
