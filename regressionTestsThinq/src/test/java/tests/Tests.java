@@ -22,6 +22,16 @@ public class Tests {
         loginPage.homePage().goTo();
         Assert.assertTrue(loginPage.homePage().isAt());
         loginPage.homePage().logIn();
+
+    }
+
+    @Test
+    public void createAccountFromZero() {
+
+        System.setProperty("webdriver.chrome.driver", "C:/chrome_driver/chromedriver.exe");
+        loginPage.homePage().goTo();
+        Assert.assertTrue(loginPage.homePage().isAt());
+        loginPage.homePage().logIn();
         loginPage.homePage().accountsBtn();
         loginPage.homePage().accountsPage();
         loginPage.homePage().createAcc();
@@ -29,9 +39,13 @@ public class Tests {
     }
 
     @Test
-    public void createUser(){
+    public void createUser(){  // (Needs some work yet)
 
+        System.setProperty("webdriver.chrome.driver", "C:/chrome_driver/chromedriver.exe");
         loginPage.homePage().goTo();
+        loginPage.homePage().logIn();
+        loginPage.homePage().accountsBtn();
+        loginPage.homePage().accountsPage();
         loginPage.homePage().createNewUser();
 
     }

@@ -117,6 +117,10 @@ public class Pages {
 
     public void createNewUser(){
 
+
+        // Hardcoded for now:
+        String accId = "773";
+
         WebDriverWait wait = new WebDriverWait(wd, 20);
         //click Accounts
         wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Accounts")));
