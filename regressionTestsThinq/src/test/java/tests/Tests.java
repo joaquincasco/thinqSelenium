@@ -39,7 +39,7 @@ public class Tests {
     }
 
     @Test
-    public void createUser(){  // (Needs some work yet)
+    public void createUser(){
 
         System.setProperty("webdriver.chrome.driver", "C:/chrome_driver/chromedriver.exe");
         loginPage.homePage().goTo();
