@@ -9,14 +9,17 @@ import java.awt.font.ShapeGraphicAttribute;
 public class Browser {
 
 
+
     static WebDriver wd = new ChromeDriver();
+    // -Dwebdriver.chrome.driver="C:\chrome_driver\chromedriver.exe"
 
 
-    public static void goTo(String url){
+    static void goTo(String url){
+        wd.manage().window().maximize();
         wd.get(url);
     }
 
-    public static String title() {
+    static String title() {
         return wd.getTitle();
     }
 

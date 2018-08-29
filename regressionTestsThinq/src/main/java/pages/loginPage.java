@@ -4,6 +4,7 @@ public class loginPage {
 
 
     public static Pages homePage() {
+
         return new Pages();
     }
 

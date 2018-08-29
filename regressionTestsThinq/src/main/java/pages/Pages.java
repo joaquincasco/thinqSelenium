@@ -125,7 +125,7 @@ public class Pages {
         //Search account
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div/div[3]/div[2]/div/div[1]/div[1]/ul/li[7]/a")));
         WebElement accIdSearch = ((ChromeDriver) wd).findElementByXPath("/html/body/div/div[2]/div/form/div/div/input");
-        accIdSearch.sendKeys("569");
+        accIdSearch.sendKeys(accId);
         accIdSearch.sendKeys(Keys.RETURN);
 
         //click Account Users
